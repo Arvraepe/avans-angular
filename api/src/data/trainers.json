@@ -1,0 +1,21 @@
+[{
+  "name": "Ash Ketchum",
+  "age": 11,
+  "male": true,
+  "pokemons": ["17", "99", "6", "1"]
+},{
+  "name": "Gary Oak",
+  "age": 11,
+  "male": true,
+  "pokemons": ["130", "133", "78"]
+},{
+  "name": "Brock",
+  "age": 16,
+  "male": true,
+  "pokemons": ["95", "74", "46"]
+},{
+  "name": "Misty",
+  "age": 13,
+  "male": false,
+  "pokemons": ["121", "54", "60"]
+}]
