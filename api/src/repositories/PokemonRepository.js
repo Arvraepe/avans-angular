@@ -29,7 +29,7 @@ function getTypes () {
     return getAllPokemonsAsArray().map(function (pokemon) { return pokemon.type; }).getUnique();
 }
 
-exports.all = getAllPokemonsAsArray();
+exports.all = getAllPokemonsAsArray;
 exports.getById = getPokemonById;
 exports.getByType = getPokemonByType;
 exports.getTypes = getTypes;
