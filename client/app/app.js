@@ -6,7 +6,7 @@ Shellenge.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', funct
 
     $urlRouterProvider.otherwise("/page-not-found");
     $stateProvider
-        .state('landing', { url: '', template: 'Landing page' })
+        .state('landing', { url: '', template: '<page-home></page-home>' })
     ;
 }]);
 

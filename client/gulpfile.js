@@ -75,10 +75,10 @@ gulp.task('webserver', function () {
 
 
 gulp.task('watch', function () {
-    gulp.watch('./app/**/*.scss', ['styles', 'build-number']);
-    gulp.watch('./app/**/*.js', ['scripts', 'build-number']);
-    gulp.watch('./app/**/*.html', ['templates', 'build-number']);
-    gulp.watch('./app/resources/**/*.json', ['resources', 'build-number']);
+    gulp.watch('./app/**/*.scss', ['styles']);
+    gulp.watch('./app/**/*.js', ['scripts']);
+    gulp.watch('./app/**/*.html', ['templates']);
+    gulp.watch('./app/resources/**/*.json', ['resources']);
 });
 
 gulp.task('run', ['styles', 'scripts', 'templates', 'resources', 'webserver', 'watch']);
