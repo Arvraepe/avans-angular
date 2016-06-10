@@ -7,11 +7,23 @@ angular.module('poke.services')
             return $http({
                 method: 'get',
                 url: base + '/pokemon'
+            }).then(function (response){
+                return response.data;
+            });
+        }
+
+        function getById (id) {
+            return $http({
+                method: 'get',
+                url: base + '/pokemon/'+id
+            }).then(function (response){
+                return response.data;
             });
         }
 
         return {
-            getAllPokemons: getAllPokemons
+            getAllPokemons: getAllPokemons,
+            getById: getById
         };
 
     }]);

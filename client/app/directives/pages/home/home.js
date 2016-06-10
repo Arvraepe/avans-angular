@@ -6,10 +6,11 @@ angular.module('poke.directives')
             controller: ['pokemonService', function (pokemonService){
 
                 var vm = this;
-                pokemonService.getAllPokemons().then(function (response) {
-                    console.log(response);
-                    vm.pokemons = response.data;
+                pokemonService.getAllPokemons().then(function (pokemons) {
+                    console.log(pokemons);
+                    vm.pokemons = pokemons;
                 });
             }]
         };
     });
+

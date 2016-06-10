@@ -7,6 +7,8 @@ Shellenge.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', funct
     $urlRouterProvider.otherwise("/page-not-found");
     $stateProvider
         .state('landing', { url: '', template: '<page-home></page-home>' })
+        .state('pokemon', { url: '/pokemon/:id', template: '<page-pokemon></page-pokemon>' })
+
     ;
 }]);
 
