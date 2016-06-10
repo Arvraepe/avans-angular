@@ -4,9 +4,10 @@ Poke.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', function (
     $httpProvider.useApplyAsync(true);
     $httpProvider.defaults.timeout = 5000;
 
-    $urlRouterProvider.otherwise("/page-not-found");
+    $urlRouterProvider.otherwise("/");
     $stateProvider
         .state('landing', { url: '', template: '<page-home></page-home>' })
+        .state('home', { url: '/', template: '<page-home></page-home>' })
     ;
 }]);
 
