@@ -10,7 +10,15 @@ angular.module('poke.services')
             });
         }
 
+        function getPokemonById(id) {
+            return $http({
+                method: 'get',
+                url: base + '/pokemon/'+id
+            });
+        }
+
         return {
+            getPokemonById: getPokemonById,
             getAllPokemons: getAllPokemons
         };
 

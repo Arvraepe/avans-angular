@@ -8,6 +8,8 @@ Poke.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', function (
     $stateProvider
         .state('landing', { url: '', template: '<page-home></page-home>' })
         .state('home', { url: '/', template: '<page-home></page-home>' })
+        .state('trainer', { url: '/trainer/:id', template: '<page-trainer></page-trainer>' })
+        .state('pokemon', { url: '/pokemon/:id', template: '<page-pokemon></page-pokemon>' })
     ;
 }]);
 
