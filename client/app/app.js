@@ -1,6 +1,6 @@
-var Shellenge = angular.module('poke', ['ui.router', 'ui.bootstrap', 'poke.directives', 'poke.services']);
+var Poke = angular.module('poke', ['ui.router', 'ui.bootstrap', 'poke.directives', 'poke.services']);
 
-Shellenge.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', function ($stateProvider, $urlRouterProvider, $httpProvider) {
+Poke.config(['$stateProvider', '$urlRouterProvider', '$httpProvider', function ($stateProvider, $urlRouterProvider, $httpProvider) {
     $httpProvider.useApplyAsync(true);
     $httpProvider.defaults.timeout = 5000;
 
